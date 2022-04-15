@@ -3,6 +3,9 @@ use SistemasLineales
 implicit none
 contains
 
+! Lagrange interpolation
+! Input: x(n), y(n), xi
+! Output: yi
 real*8 function LagrangeInterpolation(x,y,xRequired)
 real*8 :: x(:),y(:),xRequired,yRequired,p
 integer :: i,j,n
@@ -24,6 +27,9 @@ enddo
 
 end function LagrangeInterpolation
 
+! Direct interpolation
+! Input: x(n), y(n), xi
+! Output: yi
 real*8 function DirectInterpolation(x,y,xRequired)
 real*8 :: x(:),y(:),xRequired
 real*8,allocatable :: Vandermonde(:,:),Pa(:)
@@ -51,7 +57,6 @@ do i=1,n
 end do
 
 deallocate(Vandermonde,Pa)
-
 end function DirectInterpolation
 
 end module
