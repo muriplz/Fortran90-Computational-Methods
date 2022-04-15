@@ -7,7 +7,7 @@ If you would like me to upload the actual test programs you can open a Github Is
 ## Contents:
 
 #### Function Roots
-Quick explanation: find **x** so that f(x)=0
+Quick explanation: find **x** so that f(x)=0 (or f(x+Δx)≈0 as an aproximated value)
 ```
 Bisection Method (TBD)
 False Position Method (TBD)
