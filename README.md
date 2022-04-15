@@ -4,7 +4,10 @@
 
 #### Function Roots
 ```
-WIP
+Bisection Method
+False Position Method
+Newton-Raphson Method
+Secant Method
 ```
 #### Linear Systems
 ```
@@ -18,4 +21,9 @@ Direct Method
 Lagrange Method
 Newton Method (TBD)
 Newton-Gregory Method (TBD)
+```
+## Cooming Soon:
+```
+Derivates
+Integrals
 ```
