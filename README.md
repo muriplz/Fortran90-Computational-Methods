@@ -4,10 +4,10 @@
 
 #### Function Roots
 ```
-Bisection Method
-False Position Method
-Newton-Raphson Method
-Secant Method
+Bisection Method (TBD)
+False Position Method (TBD)
+Newton-Raphson Method (TBD)
+Secant Method (TBD)
 ```
 #### Linear Systems
 ```
@@ -27,3 +27,5 @@ Newton-Gregory Method (TBD)
 Derivates
 Integrals
 ```
+
+**TBD** = To Be Done
