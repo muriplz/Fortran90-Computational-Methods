@@ -18,7 +18,7 @@ Secant Method (TBD)
 Quick explanation: find vector **x** so that A*x=b  (A being a matrix and b a vector or independent terms)
 ```
 Gauss Elimination
-Doolite (LU descomposition) (TBD)
+Doolitle (LU descomposition) (TBD)
 Linear System solution
 ```
 #### Interpolations
