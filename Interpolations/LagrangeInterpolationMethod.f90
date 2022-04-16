@@ -1,5 +1,4 @@
 module LagrangeInterpolationMethod
-use LinearSystem
 implicit none
 contains
 

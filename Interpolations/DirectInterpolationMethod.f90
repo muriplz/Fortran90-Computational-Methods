@@ -1,5 +1,5 @@
 module DirectInterpolationMethod
-use LinearSystems
+use Gauss
 implicit none
 contains
 
@@ -26,7 +26,7 @@ do i=1,n
   end do
 end do
 
-Pa=SistemaLineal(Vandermonde,y)
+Pa=LinearSystem(Vandermonde,y)
 
 do i=1,n
   DirectInterpolation=DirectInterpolation+Pa(i)*xRequired**(i-1)

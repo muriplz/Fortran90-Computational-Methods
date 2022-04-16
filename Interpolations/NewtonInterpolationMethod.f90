@@ -9,24 +9,23 @@ contains
 real*8 function NewtonInterpolation(x,y,xRequired)
 real*8 :: xRequired,x(:),y(:),p
 real*8,allocatable :: A(:,:),c(:)
-integer :: i,j,k
+integer :: i,j,k,n
 NewtonInterpolation=0
-if(size(x).ne.size(y))then
+n=size(x)
+if(n.ne.size(y))then
   print*,"x and y must be the same size"
   STOP
 end if
-allocate(A(size(x),size(x)))
-allocate(c(size(x)))
+allocate(A(n,n))
+allocate(c(n))
 do i=1,n
   do j=1,n
-    if(i<j)then
-      A(i,j)=0
-    else if(i==1)then
+    if(j==1)then
       A(i,j)=1
     else
       p=1
-      do k=1,j
-        p=p*(xRequired-x(k))
+      do k=1,j-1
+        p=p*(x(i)-x(k))
       end do
       A(i,j)=p
     end if
@@ -35,9 +34,11 @@ end do
 c=LinearSystem(A,y)
 do i=1,n
   p=1
-  do j=1,i
-    p=p*(xRequired-x(j))
-  end do
+  if(i>1)then
+    do j=1,i-1
+      p=p*(xRequired-x(j))
+    end do
+  end if
   NewtonInterpolation=NewtonInterpolation+c(i)*p
 end do
 deallocate(A,c)
