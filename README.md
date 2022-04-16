@@ -15,7 +15,7 @@ Newton-Raphson Method (TBD)
 Secant Method (TBD)
 ```
 #### Linear Systems
-Quick explanation: find vector **x** so that A*x=b  (A being a matrix and b a vector or independent terms)
+Quick explanation: find vector **x** so that A*x=b  (A being a matrix and b a vector of independent terms)
 ```
 Gauss Elimination
 Doolitle (LU descomposition) (TBD)
