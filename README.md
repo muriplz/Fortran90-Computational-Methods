@@ -6,7 +6,7 @@ If you would like me to upload the actual test programs you can open a Github Is
 
 ## Contents:
 
-#### Function Roots
+### Function Roots
 Quick explanation: find **x** so that **f(x)=0** (or **f(x+Δx)≈0** as an aproximated value)
 ```
 Bisection Method (TBD)
@@ -14,14 +14,14 @@ False Position Method (TBD)
 Newton-Raphson Method (TBD)
 Secant Method (TBD)
 ```
-#### Linear Systems
+### Linear Systems
 Quick explanation: find vector **x** so that A*x=b  (A being a matrix and b a vector of independent terms)
 ```
 Gauss Elimination
 Doolitle (LU descomposition) (TBD)
 Linear System solution
 ```
-#### Interpolations
+### Interpolations
 Quick explanation: Given a discrete set of data points, estimate f(x) so that you can have any (estimated) image
 ```
 Direct Method
