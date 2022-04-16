@@ -26,7 +26,7 @@ Quick explanation: Given a discrete set of data points, estimate f(x) so that yo
 ```
 Direct Method
 Lagrange Method
-Newton Method (TBD)
+Newton Method (NT)
 Newton-Gregory Method (TBD)
 ```
 ## Cooming Soon:
@@ -36,3 +36,4 @@ Integrals
 ```
 
 **TBD** = To Be Done
+**NT** = Not Tested
