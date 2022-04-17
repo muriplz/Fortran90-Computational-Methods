@@ -2,6 +2,15 @@ module Utils
 implicit none
 contains
 
+subroutine BolzanoTheorem(a,b,f)
+real*8 :: a,b
+external :: f
+if(f(a)*f(b)>0)then
+  print*, "There is no root in the interval"
+  STOP
+end if
+end subroutine BolzanoTheorem
+
 ! Prints a matrix to the screen
 subroutine PrintMatrix(A)
 real*8 :: A(:,:)
