@@ -12,7 +12,7 @@ NewtonGregoryInterpolation=y(1)
 
 call BubbleSortData(x,y)
 
-if(isEquidistant(x).eqv..true.)then
+if(isEquidistant(x).eqv..false.)then
   print*, "Nodes must be equidistant on Newton-Gregory interpolation"
   STOP
 end if
