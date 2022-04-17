@@ -3,8 +3,8 @@ use Gauss
 implicit none
 contains
 
-real*8 function NewtonGregoryInterpolation(x,y,xRequerida)
-real*8 :: x(:),y(:),xRequerida,s,h,p
+real*8 function NewtonGregoryInterpolation(x,y,xRequired)
+real*8 :: x(:),y(:),xRequired,s,h,p
 real*8,allocatable :: yDifference(:),f0(:)
 integer :: i,j,k,n
 
@@ -18,7 +18,7 @@ if(isEquidistant(x).eqv..false.)then
 end if
 
 h=x(2)-x(1)
-s=(xRequerida-x(1))/h
+s=(xRequired-x(1))/h
 n=size(x)
 
 allocate(yDifference(n),f0(n-1))
