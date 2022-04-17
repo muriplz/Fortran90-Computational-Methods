@@ -29,7 +29,7 @@ Lagrange Method
 Newton Method
 Newton-Gregory Method (TBD)
 ```
-## Cooming Soon:
+## Coming Soon:
 ```
 Derivates
 Integrals
