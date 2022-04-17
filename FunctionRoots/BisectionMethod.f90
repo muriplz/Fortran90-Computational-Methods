@@ -1,4 +1,5 @@
 module BisectionMethod
+use Utils
 implicit none
 contains
  
@@ -14,10 +15,7 @@ real*8 :: a,b,errorX,errorY,m
 integer :: maxIter
 external :: f
 
-if(f(a)*f(b)>0)then
-  print*, "There is no root in the interval"
-  STOP
-end if
+call BolzanoTheorem(a,b,f)
 
 do i=1,maxIter
   m=(a+b)/2
