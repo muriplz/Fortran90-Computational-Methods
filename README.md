@@ -10,7 +10,7 @@ If you would like me to upload the actual test programs you can open a Github Is
 Quick explanation: find **x** so that **f(x)=0** (or **f(x+Δx)≈0** as an aproximated value)
 ```
 Bisection Method (NT)
-False Position Method (TBD)
+False Position Method (NT)
 Newton-Raphson Method (TBD)
 Secant Method (TBD)
 ```
