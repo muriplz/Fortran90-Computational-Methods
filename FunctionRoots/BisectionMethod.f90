@@ -12,7 +12,7 @@ end function MinIterations
 
 real*8 function Bisection(a,b,f,errorX,errorY,maxIter)
 real*8 :: a,b,errorX,errorY,m
-integer :: maxIter
+integer :: maxIter,i
 external :: f
 
 call BolzanoTheorem(a,b,f)
