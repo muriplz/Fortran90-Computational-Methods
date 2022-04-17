@@ -12,6 +12,11 @@ NewtonGregoryInterpolation=y(1)
 
 call BubbleSortData(x,y)
 
+if(isEquidistant(x).eqv..true.)then
+  print*, "Nodes must be equidistant on Newton-Gregory interpolation"
+  STOP
+end if
+
 h=x(2)-x(1)
 s=(xRequerida-x(1))/h
 n=size(x)
