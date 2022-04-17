@@ -9,7 +9,7 @@ If you would like me to upload the actual test programs you can open a Github Is
 ### Function Roots
 Quick explanation: find **x** so that **f(x)=0** (or **f(x+Δx)≈0** as an aproximated value)
 ```
-Bisection Method (TBD)
+Bisection Method (NT)
 False Position Method (TBD)
 Newton-Raphson Method (TBD)
 Secant Method (TBD)
