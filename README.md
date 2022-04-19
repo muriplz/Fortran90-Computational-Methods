@@ -35,7 +35,5 @@ Derivates
 Integrals
 ```
 
-**TBD** = To Be Done
-**NT** = Not Tested
-**NR** = Needs a Rewrite
+**TBD** = To Be Done || **NT** = Not Tested || **NR** = Needs a Rewrite
 
