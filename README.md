@@ -12,7 +12,7 @@ Quick explanation: find **x** so that **f(x)=0** (or **f(x+Δx)≈0** as an apro
 Bisection Method (NT)
 False Position Method (NT)
 Newton-Raphson Method (NT)(NR)
-Secant Method (TBD)
+Secant Method (NT)
 ```
 ### Linear Systems
 Quick explanation: find vector **x** so that A*x=b  (A being a matrix and b a vector of independent terms)
@@ -38,3 +38,4 @@ Integrals
 **TBD** = To Be Done
 **NT** = Not Tested
 **NR** = Needs a Rewrite
+
