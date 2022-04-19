@@ -49,14 +49,6 @@ end do
 deallocate(yDifference,f0)
 end function NewtonGregoryInterpolation
 
-real*8 function Factorial(n)
-integer :: n,i
-Factorial=1
-do i=n,1,-1
-  Factorial=Factorial*i
-end do
-end function Factorial
-
 logical function isEquidistant(x)
 real*8 :: x(:),h
 integer :: i,n

@@ -61,4 +61,19 @@ A(j,:)=aux
 deallocate(aux)
 end subroutine SwapRows
 
+real*8 function Factorial(n)
+integer :: n,i
+Factorial=1
+if(n<0)then
+  print*, "Factorial of negative number is undefined"
+  STOP
+else if(n==0)then
+  Factorial=1
+else
+  do i=n,1,-1
+    Factorial=Factorial*i
+  end do
+end if
+end function Factorial
+
 end module
