@@ -67,9 +67,7 @@ Factorial=1
 if(n<0)then
   print*, "Factorial of negative number is undefined"
   STOP
-else if(n==0)then
-  Factorial=1
-else
+else if(n>0)then
   do i=n,1,-1
     Factorial=Factorial*i
   end do
