@@ -31,7 +31,7 @@ Newton-Gregory Method
 ```
 ## Coming Soon:
 ```
-Derivates
+Derivatives
 Integrals
 ```
 
