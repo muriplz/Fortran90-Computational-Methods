@@ -32,7 +32,7 @@ Newton-Gregory Method
 ### Derivatives
 ```
 Taylor derivatives
-Richardson
+Richardson extrapolation
 ```
 ## Coming Soon:
 ```
