@@ -29,9 +29,14 @@ Lagrange Method
 Newton Method
 Newton-Gregory Method
 ```
+### Derivatives
+```
+Taylor derivatives
+Richardson
+```
 ## Coming Soon:
 ```
-Derivatives
+
 Integrals
 ```
 
