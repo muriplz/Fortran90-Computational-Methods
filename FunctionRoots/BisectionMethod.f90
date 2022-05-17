@@ -2,18 +2,23 @@ module BisectionMethod
 use Utils
 implicit none
 contains
+
+real*8 function f(x)
+real*8 :: x
+f=x**2-exp(x)
+end function f
  
 integer function MinIterations(a,b,f,errorX)
 real*8 :: a,b,errorX,aux
-external :: f
-aux=(log(abs(b-a))-log(errorX))/log(2)
+real*8,external :: f
+aux=(log(abs(b-a))-log(errorX))/log(2.0)
 MinIterations=ceiling(aux)
 end function MinIterations
 
 real*8 function Bisection(a,b,f,errorX,errorY,maxIter)
 real*8 :: a,b,errorX,errorY,m
 integer :: maxIter,i
-external :: f
+real*8,external :: f
 
 call BolzanoTheorem(a,b,f)
 

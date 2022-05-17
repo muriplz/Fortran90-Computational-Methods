@@ -5,7 +5,7 @@ contains
 real*8 function FalsePosition(a,b,f,errorX,errorY,maxIter)
 real*8 :: a,b,errorX,errorY,slope,m
 integer :: maxIter
-external :: f
+real*8,external :: f
 
 call BolzanoTheorem(a,b,f)
 
